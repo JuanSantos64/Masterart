@@ -1,0 +1,16 @@
+body{
+    background-image: url(../images/backgroud-hero.png);
+}
+
+h2{
+    color: #ededed;
+    font-weight: 400;
+    font-size: 64px;
+}
+h1{
+    font-weight: 800;
+    font-size: 72px;
+    color: #FF7A00;
+    text-shadow:1px 1px 6px #FFC500;
+    
+}
