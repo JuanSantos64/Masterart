@@ -13,21 +13,54 @@
     --white: #f3f3f3;
     --black: #141414;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
+    background-color: var(--white);
     position: relative;
+    
+}
+img#icone{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+img#hero2{
+
+    width: 25%;
+    height: 25%;
+    
+
+}
+
+::selection{
+    color: var(--white);
+    background-color: var(--destak-color);
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    align-items: flex-start;
+    position: relative;
+    padding: 7rem 0 0 5rem;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    /* padding-bottom: 1rem; */
+    
 }
 header::before{
+    top: 0;
+    left: 0;
     content: '';
     position: absolute;
     /* background-color: red; */
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    
     background-image: url(../images/Desktop\ -\ 1.png);
     background-size: cover;
     /* opacity: .2;
@@ -35,12 +68,30 @@ header::before{
     animation: zoom-image-background 13s forwards;
 }
 
+
 h1{
     color: var(--destak-color);
     text-shadow: 1px 5px 4px #FF512F;
     font-family: var(--font-title);
     font-size: 4.5rem;
     margin: 0 5rem;
+}
+
+h2{
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    font-family: var(--font-body);
+    font-size: 2rem;
+}
+
+section#apresentacao{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    
 }
 
 span#subtitulo{
@@ -51,7 +102,12 @@ span#subtitulo{
   display: block;
   margin: 2rem 5rem;
 }
-a{
+/* div{
+
+} */
+.botao_principal{
+    display: flex;
+    gap: .5rem;
     color: var(--white);
     margin: 0 5rem;
     font-family: var(--font-body);
@@ -63,6 +119,41 @@ a{
 a:hover{
     opacity: .8;
 }
+img#hero2:hover{
+    animation: blur 2s;
+}
+section{
+    background-image: url(https://images.unsplash.com/photo-1580136579395-4bbb9ffdc4ca?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+}
+
+
+
+@keyframes blur {
+    from{
+        
+
+            filter: blur(0);
+    
+    }
+    to{
+        
+            filter: blur(100%);
+
+        
+    }
+}
+@keyframes escurecer {
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    100%{
+        filter: grayscale(50%);
+        transform: scale(1.1);
+        border-radius: 15%;
+    }
+}
 @keyframes zoom-image-background{
     0%{
         transform: scale(1);
@@ -71,3 +162,23 @@ a:hover{
         transform: scale(1.5);
     }
 }
+  /* @keyframes shadow-drop-2-center {
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        filter: grayscale(30%);
+        transform: scale(1.5);
+        
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 35px 0px #141414b3;
+              box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.7);
+    }
+  }
+   */
