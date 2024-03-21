@@ -44,7 +44,7 @@
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="/assets/images/marinheiro.jpg"
+                        <img src="/Masterart-main/assets/images/marinheiro.jpg"
                             alt="Desenho de um marinheiro">
                     </div>
                     <div class="card-text">
@@ -56,7 +56,7 @@
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="/assets/images/mulher.jpg"
+                        <img src="/Masterart-main/assets/images/mulher.jpg"
                             alt="Obra de uma mulher">
                     </div>
                     <div class="card-text">
@@ -68,7 +68,7 @@
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="/assets/images/soldado.jpg"
+                        <img src="/Masterart-main/assets/images/soldado.jpg"
                             alt="Desenho de um soldado">
                     </div>
                     <div class="card-text">
@@ -80,6 +80,59 @@
         </ul>
     </section>
     </div>
+
+
+    <section id="secao-orcamento">
+        <h2>Peça uma nova Obra</h2>
+
+        <form>
+
+            <div class="campo linha">
+            <label for="nome-da-obra">Nome da Obra</label>
+            <input type="text" id="nome-da-obra">
+            </div>
+
+            <div class="campo">
+            <label for="autor">Autor</label>
+            <input type="text" id="autor">
+            </div>
+
+            <div class="campo">
+                <label for="ano-da-obra">Ano da Obra</label>
+                <input type="date" id="ano-da-obra">
+            </div>
+
+            <div class="campo linha">
+
+                <label for="e-free-license">É Free License?</label>
+                <div id="radio">
+
+                    <input name="free-license" type="radio" id="e-free-license-sim">
+                    <label for="e-free-license-sim">Sim, pode ser utilizado</label>
+                
+
+                    <input name="free-license" type="radio" id="e-free-license-nao">
+                    <label for="e-free-license-nao">Não, precisa pagar</label>
+                </div>
+            </div>
+
+
+            <div class="campo linha">
+
+                <label for="link-da-obra">Link da obra</label>
+                <input type="text" id="link-da-obra">
+            </div>
+
+            <div class="campo linha">
+
+                <label for="descricao">Descrição oficial da Obra</label>
+                <input id="descricao" type="text">
+            </div>
+
+
+        </form>
+       
+    </section>
 </body>
 
 </html>

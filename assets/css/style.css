@@ -10,8 +10,10 @@
     --font-title: 'Montserrat';
     --font-body: 'Poppins';
     --destak-color: #F09819;
+    --destak-color-aaa: #d4a25b;
     --white: #f3f3f3;
     --black: #141414;
+    --gray: #acacac;
 }
 
 html {
@@ -167,6 +169,47 @@ a:hover {
     transition: opacity 1s;
 }
 
+#secao-orcamento{
+    height: 100vh;
+    padding: 3rem;
+
+}
+
+#secao-orcamento form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    grid-column: 1 / 3;
+}
+div#radio{
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text], input[type=date], select{
+    padding: .5rem;
+    font-family: var(--font-title);
+    font-size: 1rem;
+    background-color: var(--destak-color);
+    border: 0;
+    border-radius: 4px;
+}
+
+input[type=radio],input[type=checkbox],input[type=range]{
+    accent-color: var(--gray);
+}
+
 @keyframes blur {
     from {
         filter: blur(0);
@@ -198,4 +241,6 @@ a:hover {
     100% {
         transform: scale(1.5);
     }
+
+
 }
