@@ -168,21 +168,58 @@ a:hover {
     opacity: 0;
     transition: opacity 1s;
 }
-
-#secao-orcamento{
-    height: 100vh;
+#secao-orcamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
     padding: 3rem;
+    overflow: hidden;
+
 
 }
+.container{
+    max-width: 1280px;
+    margin: 0;
+
+}
+#secao-orcamento .container .titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+#background-blur {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/adrianna-geo-1rBg5YSi00c-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+
+    
+}
+
 
 #secao-orcamento form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    margin: auto; /* Centraliza o container horizontalmente */
     font-size: 1.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+
 }
+
 
 .campo{
     display: flex;
@@ -201,9 +238,9 @@ input[type=text], input[type=date], select{
     padding: .5rem;
     font-family: var(--font-title);
     font-size: 1rem;
-    background-color: var(--destak-color);
     border: 0;
     border-radius: 4px;
+    box-shadow: 0 0 0 2px var(--black)
 }
 
 input[type=radio],input[type=checkbox],input[type=range]{

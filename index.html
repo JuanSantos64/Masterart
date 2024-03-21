@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <h1>MasterArt</h1>
         <span id="subtitulo">Discover the world of art</span>
         <a class="botao_principal" href="#aaa">
-            <img id="icone" src="/Masterart/assets/images/angel.png">
+            <img id="icone" src="/assets/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg">
             <span>Saiba Mais</span>
         </a>
     </header>
@@ -38,14 +39,13 @@
             </p>
             <a id="aaa" href="#">Conheça a obra</a>
     </section>
-    
+
     <section id="secao-projeto">
         <ul>
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="/Masterart-main/assets/images/marinheiro.jpg"
-                            alt="Desenho de um marinheiro">
+                        <img src="/assets/images/marinheiro.jpg" alt="Desenho de um marinheiro">
                     </div>
                     <div class="card-text">
                         <h2>Marinheiro</h2>
@@ -56,8 +56,7 @@
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="/Masterart-main/assets/images/mulher.jpg"
-                            alt="Obra de uma mulher">
+                        <img src="/assets/images/mulher.jpg" alt="Obra de uma mulher">
                     </div>
                     <div class="card-text">
                         <h2>Mulher</h2>
@@ -68,8 +67,7 @@
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="/Masterart-main/assets/images/soldado.jpg"
-                            alt="Desenho de um soldado">
+                        <img src="/assets/images/soldado.jpg" alt="Desenho de um soldado">
                     </div>
                     <div class="card-text">
                         <h2>Soldado</h2>
@@ -81,20 +79,21 @@
     </section>
     </div>
 
-
     <section id="secao-orcamento">
-        <h2>Peça uma nova Obra</h2>
 
-        <form>
+        <div id="background-blur"></div>
 
+        <form class="container">
+             <h2 class="titulo linha">Peça uma nova Obra</h2>
+            
             <div class="campo linha">
-            <label for="nome-da-obra">Nome da Obra</label>
-            <input type="text" id="nome-da-obra">
+                <label for="nome-da-obra">Nome da Obra</label>
+                <input type="text" id="nome-da-obra">
             </div>
 
             <div class="campo">
-            <label for="autor">Autor</label>
-            <input type="text" id="autor">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor">
             </div>
 
             <div class="campo">
@@ -109,7 +108,7 @@
 
                     <input name="free-license" type="radio" id="e-free-license-sim">
                     <label for="e-free-license-sim">Sim, pode ser utilizado</label>
-                
+
 
                     <input name="free-license" type="radio" id="e-free-license-nao">
                     <label for="e-free-license-nao">Não, precisa pagar</label>
@@ -128,10 +127,10 @@
                 <label for="descricao">Descrição oficial da Obra</label>
                 <input id="descricao" type="text">
             </div>
-
+<output id="preco">O nome da obra aparece aqui</output>
 
         </form>
-       
+
     </section>
 </body>
 
